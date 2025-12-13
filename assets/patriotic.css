@@ -510,7 +510,7 @@ a:hover {
     padding: 1.5rem 3.5rem 1.75rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
     background-color: #FFFFFF;
 }
@@ -526,7 +526,7 @@ a:hover {
 .hero-image-base {
     object-fit: cover;
     display: block;
-    object-position: -90px center;
+    object-position: center;
 }
 
 /* Overlapping color image - OUTSIDE to the left */
