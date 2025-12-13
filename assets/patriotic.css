@@ -1,43 +1,42 @@
 /* At the very top of your CSS file */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
 
-
 :root {
-  /* ===== THREE BLUE SYSTEM ===== */
+  /* ===== NEW COLOR SYSTEM ===== */
   
-  /* DARK BLUE (40% - Headers, emphasis, navigation bars) */
-  --blue: #002868;
-  --blue-dark: #002868;
-  --blue-darker: #002868;
-  --indigo: #002868;
-  --purple: #002868;
-  --primary: #002868;
-  --dark: #002868;
-  --theme-primary-color: #002868;
-  --theme-primary-bgcolor: #002868;
+  /* DARK BLUE → GOLD PRIMARY (40% - Headers, emphasis, navigation bars) */
+  --blue: #C8A53B;
+  --blue-dark: #C8A53B;
+  --blue-darker: #C8A53B;
+  --indigo: #C8A53B;
+  --purple: #C8A53B;
+  --primary: #C8A53B;
+  --dark: #1F3255;
+  --theme-primary-color: #C8A53B;
+  --theme-primary-bgcolor: #C8A53B;
   
-  /* LIGHT BLUE (30% - Buttons, links, interactive elements) */
-  --theme-secondary-color: #4A7BC8;
-  --theme-secondary-bgcolor: #4A7BC8;
-  --blue-light: #4A7BC8;
-  --blue-lighter: #E8F0FA;
+  /* LIGHT BLUE → GOLD SECONDARY (30% - Buttons, links, interactive elements) */
+  --theme-secondary-color: #EAD292;
+  --theme-secondary-bgcolor: #EAD292;
+  --blue-light: #EAD292;
+  --blue-lighter: #FAF7ED;
   
-  /* MEDIUM BLUE (5% - Supporting, accents) */
-  --theme-tertiary-color: #00398F;
-  --theme-tertiary-bgcolor: #00398F;
-  --cyan: #00398F;
-  --teal: #00398F;
-  --info: #00398F;
-  --green: #00398F;
-  --success: #00398F;
+  /* MEDIUM BLUE → DEEP RED (5% - Supporting, accents) */
+  --theme-tertiary-color: #B52B2D;
+  --theme-tertiary-bgcolor: #B52B2D;
+  --cyan: #B52B2D;
+  --teal: #B52B2D;
+  --info: #B52B2D;
+  --green: #B52B2D;
+  --success: #B52B2D;
   
-  /* ===== RED ACCENT (Defined but NOT USED in current elements) ===== */
-  --red: #BF0A30;
-  --danger: #BF0A30;
-  --warning: #BF0A30;
-  --orange: #BF0A30;
-  --yellow: #BF0A30;
-  --pink: #BF0A30;
+  /* ===== RED ACCENT → SILVER (Supporting elements) ===== */
+  --red: #B3B3B3;
+  --danger: #B3B3B3;
+  --warning: #B3B3B3;
+  --orange: #B3B3B3;
+  --yellow: #B3B3B3;
+  --pink: #B3B3B3;
   
   /* ===== NEUTRALS ===== */
   --white: #FFFFFF;
@@ -49,29 +48,29 @@
   --theme-font-color: #000000;
   
   /* Grays - Keep for secondary UI */
-  --gray: #6c757d;
-  --grey: #6c757d;
-  --grey-light: #6c757d;
-  --secondary: #6c757d;
-  --gray-dark: #343a40;
-  --grey-dark: #343a40;
+  --gray: #B3B3B3;
+  --grey: #B3B3B3;
+  --grey-light: #B3B3B3;
+  --secondary: #B3B3B3;
+  --gray-dark: #1F3255;
+  --grey-dark: #1F3255;
   
   /* ===== HEADER COLORS ===== */
-  --theme-h1-font-color: #002868;
-  --theme-h2-font-color: #002868;
-  --theme-h3-font-color: #002868;
-  --theme-h4-font-color: #002868;
-  --theme-h5-font-color: #002868;
-  --theme-h6-font-color: #002868;
+  --theme-h1-font-color: #C8A53B;
+  --theme-h2-font-color: #C8A53B;
+  --theme-h3-font-color: #C8A53B;
+  --theme-h4-font-color: #C8A53B;
+  --theme-h5-font-color: #C8A53B;
+  --theme-h6-font-color: #C8A53B;
   
   /* ===== LINK COLORS ===== */
-  --theme-anchor-color: #4A7BC8;
-  --theme-anchor-hover-color: #00398F;  /* Medium blue, NOT red */
+  --theme-anchor-color: #EAD292;
+  --theme-anchor-hover-color: #B52B2D;
   
   /* ===== SHADOWS ===== */
-  --theme-box-shadow-primary-color: rgba(0, 40, 104, .08);
-  --theme-box-shadow-secondary-color: rgba(0, 40, 104, .15);
-  --theme-header-box-shadow-color: rgba(0, 40, 104, .1);
+  --theme-box-shadow-primary-color: rgba(200, 165, 59, .08);
+  --theme-box-shadow-secondary-color: rgba(200, 165, 59, .15);
+  --theme-header-box-shadow-color: rgba(200, 165, 59, .1);
   
   /* Keep typography settings unchanged */
   --theme-font-family: "Montserrat", Arial, sans-serif;
@@ -90,92 +89,93 @@
 
 /* ===== BUTTONS ===== */
 
-/* Primary buttons - Light blue with white text */
+/* Primary buttons - Gold secondary with dark text */
 .btn,
 .btn-primary {
-  background-color: #4A7BC8 !important;
-  color: #FFFFFF !important;
-  border-color: #4A7BC8 !important;
+  background-color: #EAD292 !important;
+  color: #1F3255 !important;
+  border-color: #EAD292 !important;
 }
 
-/* Hover: Light blue → Medium blue */
+/* Hover: Gold secondary → Deep red */
 .btn:hover,
 .btn-primary:hover {
-  background-color: #00398F !important;
-  border-color: #00398F !important;
+  background-color: #B52B2D !important;
+  border-color: #B52B2D !important;
   color: #FFFFFF !important;
 }
 
-/* Outline buttons - White bg with light blue text, NO BORDER */
+/* Outline buttons - White bg with gold text, NO BORDER */
 .btn.outline-btn,
 .c-info-section__column-button {
   background-color: #FFFFFF !important;
-  color: #4A7BC8 !important;
-  border: none !important;  /* NO border */
-}
-
-/* Hover: White → Light blue background */
-.btn.outline-btn:hover,
-.c-info-section__column-button:hover {
-  background-color: #4A7BC8 !important;
-  color: #FFFFFF !important;
+  color: #EAD292 !important;
   border: none !important;
 }
 
-/* Info/Success buttons - Medium blue */
+/* Hover: White → Gold secondary background */
+.btn.outline-btn:hover,
+.c-info-section__column-button:hover {
+  background-color: #EAD292 !important;
+  color: #1F3255 !important;
+  border: none !important;
+}
+
+/* Info/Success buttons - Deep red */
 .btn-info,
 .btn-success {
-  background-color: #00398F !important;
-  border-color: #00398F !important;
+  background-color: #B52B2D !important;
+  border-color: #B52B2D !important;
   color: #FFFFFF !important;
 }
 
-/* Hover: Medium blue → Dark blue */
+/* Hover: Deep red → Gold primary */
 .btn-info:hover,
 .btn-success:hover {
-  background-color: #002868 !important;
-  border-color: #002868 !important;
+  background-color: #C8A53B !important;
+  border-color: #C8A53B !important;
   color: #FFFFFF !important;
 }
 
-/* Secondary buttons - Gray */
+/* Secondary buttons - Silver */
 .btn-secondary {
-  background-color: #6c757d !important;
-  border-color: #6c757d !important;
-  color: #FFFFFF !important;
+  background-color: #B3B3B3 !important;
+  border-color: #B3B3B3 !important;
+  color: #1F3255 !important;
 }
 
-/* Hover: Gray → Darker gray */
+/* Hover: Silver → Darker gray */
 .btn-secondary:hover {
-  background-color: #5a6268 !important;
-  border-color: #5a6268 !important;
+  background-color: #8A8A8A !important;
+  border-color: #8A8A8A !important;
   color: #FFFFFF !important;
 }
 
-/* Danger/Warning buttons - Red (DEFINED but likely not used) */
+/* Danger/Warning buttons - Silver */
 .btn-danger,
 .btn-warning {
-  background-color: #BF0A30 !important;
-  border-color: #BF0A30 !important;
-  color: #FFFFFF !important;
+  background-color: #B3B3B3 !important;
+  border-color: #B3B3B3 !important;
+  color: #1F3255 !important;
 }
 
 .btn-danger:hover,
 .btn-warning:hover {
-  background-color: #8F0724 !important;
-  border-color: #8F0724 !important;
+  background-color: #8A8A8A !important;
+  border-color: #8A8A8A !important;
+  color: #FFFFFF !important;
 }
 
 /* ===== HEADERS ===== */
 h1, h2, h3, h4, h5, h6 {
-  color: #002868 !important;
+  color: #C8A53B !important;
 }
 
 .c-number-counter__item-count,
 .c-number-counter__number-counter-column_title,
 .l-portfolio__item-title,
 .l-team-archive__name {
-  color: #002868 !important;
+  color: #C8A53B !important;
 }
 
 /* ===== NAVIGATION - REMOVE YELLOW UNDERLINE ===== */
@@ -199,16 +199,16 @@ h1, h2, h3, h4, h5, h6 {
 /* Default navigation links */
 .nav-link,
 .c-header__nav-link {
-    color: #343a40 !important;  /*FIXIT to black*/
+    color: #1F3255 !important;
     font-weight: 500;
     position: relative;
     transition: all 0.3s ease;
 }
 
-/* Active state - Bold, no background, no yellow */
+/* Active state - Bold, no background */
 .nav-link.active,
 .c-header__nav-link.active {
-    color: #4A7BC8 !important;
+    color: #EAD292 !important;
     font-weight: 700 !important;
     border-radius: 5px;
     padding: 8px 16px;
@@ -217,42 +217,42 @@ h1, h2, h3, h4, h5, h6 {
 /* Hover state */
 .nav-link:hover,
 .c-header__nav-link:hover {
-    color: #00398F !important;
+    color: #B52B2D !important;
 }
 
 /* Active link stays same on hover */
 .nav-link.active:hover,
 .c-header__nav-link.active:hover {
-    color: #4A7BC8 !important;
+    color: #EAD292 !important;
 }
 
 /* ===== LINKS ===== */
 a {
-  color: #4A7BC8 !important;
+  color: #EAD292 !important;
 }
 
-/* Hover: Light blue → Medium blue */
+/* Hover: Gold secondary → Deep red */
 a:hover {
-  color: #00398F !important;
+  color: #B52B2D !important;
 }
 
 /* ===== BACKGROUNDS ===== */
 .bg-primary {
-  background-color: #002868 !important;
+  background-color: #C8A53B !important;
 }
 
 .bg-secondary {
-  background-color: #6c757d !important;
+  background-color: #B3B3B3 !important;
 }
 
 .bg-info,
 .bg-success {
-  background-color: #00398F !important;
+  background-color: #B52B2D !important;
 }
 
 .bg-danger,
 .bg-warning {
-  background-color: #BF0A30 !important;
+  background-color: #B3B3B3 !important;
 }
 
 .bg-light {
@@ -261,73 +261,62 @@ a:hover {
 
 /* ===== TEXT COLORS ===== */
 .text-primary {
-  color: #002868 !important;
+  color: #C8A53B !important;
 }
 
 .text-secondary {
-  color: #6c757d !important;
+  color: #B3B3B3 !important;
 }
 
 .text-info,
 .text-success {
-  color: #00398F !important;
+  color: #B52B2D !important;
 }
 
 .text-danger,
 .text-warning {
-  color: #BF0A30 !important;
+  color: #B3B3B3 !important;
 }
 
 /* ===== BADGES & ALERTS ===== */
 .badge-primary {
-  background-color: #002868 !important;
+  background-color: #C8A53B !important;
 }
 
 .badge-info,
 .badge-success {
-  background-color: #00398F !important;
+  background-color: #B52B2D !important;
 }
 
 .badge-danger,
 .badge-warning {
-  background-color: #BF0A30 !important;
+  background-color: #B3B3B3 !important;
 }
 
 .alert-primary {
-  background-color: rgba(0, 40, 104, .1) !important;
-  border-color: #002868 !important;
-  color: #002868 !important;
+  background-color: rgba(200, 165, 59, .1) !important;
+  border-color: #C8A53B !important;
+  color: #C8A53B !important;
 }
 
 .alert-info,
 .alert-success {
-  background-color: rgba(0, 57, 143, .1) !important;
-  border-color: #00398F !important;
-  color: #00398F !important;
+  background-color: rgba(181, 43, 45, .1) !important;
+  border-color: #B52B2D !important;
+  color: #B52B2D !important;
 }
 
 .alert-danger,
 .alert-warning {
-  background-color: rgba(191, 10, 48, .1) !important;
-  border-color: #BF0A30 !important;
-  color: #BF0A30 !important;
+  background-color: rgba(179, 179, 179, .1) !important;
+  border-color: #B3B3B3 !important;
+  color: #1F3255 !important;
 }
 
-/* ===== FOOTER ===== */
-
-/* Desktop - rounded corners with margin 
-@media only screen and (min-width: 767px) {
-    .c-footer {
-        border-radius: 25px;
-        margin: 0 20px 20px;
-    }
-}*/
-
-/* All screens - background and padding */
 /* ===== FOOTER (FULL WIDTH WITH TOP ROUNDED CORNERS) ===== */
 
 .c-footer {
-    background-color: #002868 !important;
+    background-color: #C8A53B !important;
     padding: 100px 0 30px;
     display: block;
     /* Only top corners rounded */
@@ -335,13 +324,13 @@ a:hover {
     border-top-right-radius: 25px !important;
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
-    margin: 0;  /* NO margins */
-    width: 100%;  /* Force full width */
+    margin: 0;
+    width: 100%;
 }
 
 /* Make sure container inside footer is also full width */
 .c-footer .container {
-    max-width: 1200px;  /* Or your container max-width */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -364,25 +353,25 @@ a:hover {
     color: #FFFFFF !important;
 }
 
-/* Footer link hover - Light blue */
+/* Footer link hover - Gold secondary */
 .c-footer a:hover,
 .c-footer__footer-column ul li a:hover {
-    color: #4A7BC8 !important;
+    color: #EAD292 !important;
 }
 
-/* Footer social icons - White circle with dark blue icon */
+/* Footer social icons - White circle with gold icon */
 .c-footer__copyright-social-icon ul li a i {
     background-color: #FFFFFF !important;
     padding: 10px;
     border-radius: 50%;
-    color: #002868 !important;
+    color: #C8A53B !important;
     transition: .5s;
 }
 
-/* Footer social icons hover - Light blue circle with white icon */
+/* Footer social icons hover - Gold secondary circle with white icon */
 .c-footer__copyright-social-icon ul li a i:hover {
-    background-color: #4A7BC8 !important;
-    color: #FFFFFF !important;
+    background-color: #EAD292 !important;
+    color: #1F3255 !important;
 }
 
 /* Font Awesome brands */
@@ -392,66 +381,71 @@ a:hover {
 
 /* ===== BORDERS ===== */
 .border-primary {
-  border-color: #002868 !important;
+  border-color: #C8A53B !important;
 }
 
 .border-secondary {
-  border-color: #6c757d !important;
+  border-color: #B3B3B3 !important;
 }
 
 .border-danger,
 .border-warning {
-  border-color: #BF0A30 !important;
+  border-color: #B3B3B3 !important;
 }
 
 /* ===== SPECIFIC OVERRIDES ===== */
 
-/* Override inline RGB colors */
-[style*="rgb(45, 54, 99)"] {
-  color: #002868 !important;
+/* Override old blue colors */
+[style*="rgb(45, 54, 99)"],
+[style*="#002868"] {
+  color: #C8A53B !important;
 }
 
 [style*="background-color: rgb(45, 54, 99)"],
-[style*="background: rgb(45, 54, 99)"] {
-  background-color: #002868 !important;
+[style*="background: rgb(45, 54, 99)"],
+[style*="background-color: #002868"],
+[style*="background: #002868"] {
+  background-color: #C8A53B !important;
 }
 
-[style*="rgb(110, 146, 255)"] {
-  color: #4A7BC8 !important;
+[style*="rgb(110, 146, 255)"],
+[style*="#4A7BC8"] {
+  color: #EAD292 !important;
 }
 
 [style*="background-color: rgb(110, 146, 255)"],
-[style*="background: rgb(110, 146, 255)"] {
-  background-color: #4A7BC8 !important;
+[style*="background: rgb(110, 146, 255)"],
+[style*="background-color: #4A7BC8"],
+[style*="background: #4A7BC8"] {
+  background-color: #EAD292 !important;
 }
 
 [style*="rgb(22, 44, 64)"] {
-  color: #000000 !important;
+  color: #1F3255 !important;
 }
 
-[style*="rgb(0, 57, 143)"] {
-  color: #00398F !important;
+[style*="rgb(0, 57, 143)"],
+[style*="#00398F"] {
+  color: #B52B2D !important;
 }
 
 [style*="background-color: rgb(0, 57, 143)"],
-[style*="background: rgb(0, 57, 143)"] {
-  background-color: #00398F !important;
+[style*="background: rgb(0, 57, 143)"],
+[style*="background-color: #00398F"],
+[style*="background: #00398F"] {
+  background-color: #B52B2D !important;
 }
 
-/* Heroicons patriotic coloring - ADD THIS TO YOUR EXISTING FILE */
-
-
+/* Heroicons new color scheme */
 .icon-patriotic-3 { stroke: none !important; }
-.icon-patriotic-3 path:nth-child(1) { fill: #002868; }   /*stroke removed*/
-.icon-patriotic-3 path:nth-child(2) { fill: #4A7BC8; }
-.icon-patriotic-3 path:nth-child(3) { fill: #BF0A30; }
+.icon-patriotic-3 path:nth-child(1) { fill: #C8A53B; }
+.icon-patriotic-3 path:nth-child(2) { fill: #EAD292; }
+.icon-patriotic-3 path:nth-child(3) { fill: #B52B2D; }
 
 /* Gradient option */
 .icon-patriotic-gradient { 
     stroke: url(#patriotic-gradient); 
 }
-
-/* Add to patriotic.css */
 
 /* Feature icons (replaces 87px PNGs) */
 .feature-icon,
@@ -474,7 +468,7 @@ a:hover {
 /* Page title block with wave background */
 .block-page-title-block {
     margin-bottom: 4rem;
-    padding-top: 0rem;   /*FIXED 8rem*/
+    padding-top: 0rem;
     position: relative;
 }
 
@@ -497,7 +491,6 @@ a:hover {
 /* Full-width block with image on right */
 .block-page-title-block .block__inner {
     background-color: #FFFFFF;
-    /*border-radius: 0.5rem;*/
     display: flex;
     align-items: stretch;
     max-width: 100%;
@@ -512,27 +505,25 @@ a:hover {
 
 /* Left side: Text content */
 .block__inner-text {
-    flex: 1 1 42%;  /* Takes 42% */
+    flex: 1 1 42%;
     min-width: 42%;
     padding: 1.5rem 3.5rem 1.75rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* CHANGED from flex-start */
-    position: relative; /* For absolute positioning of button */
-    background-color: #FFFFFF; /* Ensure white background */
+    justify-content: space-between;
+    position: relative;
+    background-color: #FFFFFF;
 }
 
 /* Right side: Full-height image with overlay */
 .block__inner-image {
-    flex: 0 0 58%; /* Takes 58% - CHANGED from 40% */
+    flex: 0 0 58%;
     min-height: 100%;
-    position: relative; /* For absolute positioning of overlay */
+    position: relative;
 }
 
 /* Base hero image */
 .hero-image-base {
-    /*width: 100%;*/
-    /*height: 100%;*/
     object-fit: cover;
     display: block;
     object-position: -90px center;
@@ -541,10 +532,10 @@ a:hover {
 /* Overlapping color image - OUTSIDE to the left */
 .hero-image-overlay {
     position: absolute;
-    bottom: 24px;        /* 24px from bottom */
-    left: -48px;         /* 48px OUTSIDE to the left */
+    bottom: 24px;
+    left: -48px;
     width: auto;
-    height: 50%;         /* 50% of parent height */
+    height: 50%;
     z-index: 2;
     object-fit: contain;
 }
@@ -552,9 +543,9 @@ a:hover {
 /* Call to action button - bottom left aligned with overlay */
 .block__inner-text .c-call-to-action__button {
     position: absolute;
-    bottom: 30px;       /* was 24px Same as hero-image-overlay bottom */
-    left: 3.5rem;       /* Same as text padding-left */
-    color: #BF0A30;     /* FIXED */
+    bottom: 30px;
+    left: 3.5rem;
+    color: #B52B2D;
 }
 
 .block__inner-text .c-call-to-action__button .btn {
@@ -565,37 +556,37 @@ a:hover {
 @media (max-width: 991px) {
     .block-page-title-block .block__inner {
         flex-direction: column;
-        height: auto; /* Allow height to adjust */
+        height: auto;
     }
     
     /* Image on top */
     .block__inner-image {
         flex: 0 0 300px;
-        order: 1; /* Image first */
+        order: 1;
         width: 100%;
     }
     
     /* Text below image */
     .block__inner-text {
-        order: 2; /* Text second */
+        order: 2;
         padding: 1rem 2rem 1.25rem;
         min-width: 100%;
         flex: 1 1 auto;
     }
     
     .hero-image-base {
-        object-position: center center; /* Better mobile centering */
+        object-position: center center;
     }
     
     .hero-image-overlay {
         bottom: 16px;
-        left: -24px; /* Less overlap on mobile */
+        left: -24px;
         height: 40%;
     }
     
     /* Button positioning on mobile */
     .block__inner-text .c-call-to-action__button {
-        position: relative; /* Stack normally on mobile */
+        position: relative;
         bottom: auto;
         left: auto;
         margin-top: 1.5rem;
@@ -618,10 +609,10 @@ a:hover {
 
 /* Image - 15% of screen width (75% of container) */
 #sidebar-image img {
-    width: 75%;  /* 15% of screen = 75% of 20% container */
+    width: 75%;
     object-fit: cover;
     display: block;
-    margin: 0 auto; /* FIXED horizontal centering */
+    margin: 0 auto;
 }
 
 @media (max-width: 991px) {
@@ -660,4 +651,3 @@ scrolling-text > div {
 .demo-label {
     display: none;
 }
-
