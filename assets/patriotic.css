@@ -651,3 +651,9 @@ scrolling-text > div {
 .demo-label {
     display: none;
 }
+
+/* Adjust ROW  t */
+
+.row {
+margin-bottom: 32px;  
+} 
