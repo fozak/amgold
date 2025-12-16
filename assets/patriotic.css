@@ -657,3 +657,11 @@ scrolling-text > div {
 .row {
 margin-bottom: 32px;  
 } 
+
+@media print {
+  header {
+    display: block !important;
+    position: relative !important;
+  }
+}
+
