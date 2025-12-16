@@ -658,10 +658,27 @@ scrolling-text > div {
 margin-bottom: 32px;  
 } 
 
-@media print {
-  header {
+/* Ensure header displays normally */
+.c-header {
     display: block !important;
-    position: relative !important;
-  }
+    position: relative !important; /* Use relative if not fixed */
+    z-index: 1000; /* Keep it above other content */
 }
+
+/* Ensure navbar inside header shows */
+.c-header__navbar {
+    display: flex !important;
+}
+
+/* Print version */
+@media print {
+    .c-header {
+        display: block !important;
+        position: relative !important;
+    }
+    .c-header__navbar {
+        display: flex !important;
+    }
+}
+
 
